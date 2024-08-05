@@ -1,0 +1,14 @@
+$old-mobile-screen-width: 29.9375rem;
+$mobile-screen-width: 47.9375rem;
+$medium-screen-width: 61.9375rem;
+$desktop-screen-width: 79.9375rem;
+$large-desktop-screen-width: 120rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $old-mobile-screen-width, // 479
+  md: $mobile-screen-width, // 767
+  lg: $medium-screen-width, // 991
+  xl: $desktop-screen-width, // 1279
+  xxl: $large-desktop-screen-width, //1920
+);

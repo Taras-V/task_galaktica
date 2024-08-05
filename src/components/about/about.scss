@@ -1,0 +1,121 @@
+.about {
+    max-width: 71.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3.75rem $page-padding-xxl;
+
+    &__title {
+        color: var(--primary-color-text);
+        font-family: var(--secondary-font-family);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 140%;
+        text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0.625rem;
+            height: 0.625rem;
+            width: 100%;
+            border-radius: 1.3125rem;
+            background: var(--secondary-background-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1.5s ease-in-out;
+            z-index: -1;
+        }
+
+        &_visible::after {
+            transform: scaleX(1);
+        }
+
+    }
+
+    &__wrap {
+        width: 100%;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.875rem;
+    }
+
+    &__item {
+        max-width: 30.3125rem;
+
+        &-title {
+            color: var(--primary-color-text);
+            font-family: var(--secondary-font-family);
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+
+        &-description {
+            margin-top: 1rem;
+            color: var(--secondary-color-text);
+            font-family: var(--primary-font-family);
+            font-size: 1rem;
+            line-height: 150%;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: $desktop-screen-width) {
+    .about {
+        padding: 3.75rem $page-padding-xl;
+    }
+}
+
+@media (max-width: $medium-screen-width) {
+    .about {
+        padding: 3.75rem $page-padding-lg;
+    }
+}
+
+@media (max-width: $mobile-screen-width) {
+    .about {
+        padding: 3.125rem $page-padding-md;
+
+        &__title {
+            font-size: 1.5rem;
+
+            &::after {
+                bottom: 0.1875rem;
+            }
+        }
+
+        &__wrap {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+
+        &__item-title {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+@media (max-width: $old-mobile-screen-width) {
+    .about {
+        padding: 2.5rem $page-padding-sm;
+
+        &__wrap {
+            margin-top: 2.625rem;
+            gap: 1.5rem;
+        }
+    }
+}

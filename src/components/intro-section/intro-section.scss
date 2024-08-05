@@ -1,0 +1,124 @@
+.intro {
+    max-width: 71.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.625rem $page-padding-xxl 0;
+
+    &__picture {
+        max-width: 28.8125rem;
+    }
+
+    &__wrap {
+        max-width: 34.875rem;
+    }
+
+    &__title {
+        max-width: 33.75rem;
+        color: var(--primary-color-text);
+        font-family: var(--secondary-font-family);
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 140%;
+        text-transform: capitalize;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+
+        &-line {
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0.625rem;
+                height: 0.75rem;
+                width: 100%;
+                border-radius: 1.3125rem;
+                background: var(--secondary-background-color);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 1.7s ease-in-out;
+                z-index: -1;
+            }
+
+            &_visible::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 1.75rem;
+        color: var(--secondary-color-text);
+        font-family: var(--primary-font-family);
+        font-size: 1rem;
+        line-height: 150%;
+    }
+
+}
+
+@media (max-width: $desktop-screen-width) {
+    .intro {
+        padding: 2.625rem $page-padding-xl 0;
+        gap: 1.875rem;
+    }
+}
+
+@media (max-width: $medium-screen-width) {
+    .intro {
+        padding: 2.625rem $page-padding-lg 0;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        &__wrap {
+            max-width: 100%;
+        }
+
+        &__title {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $mobile-screen-width) {
+    .intro {
+        padding: 7.125rem $page-padding-md 0;
+        margin: 0 auto;
+
+
+        &__description {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 25.9375rem) {
+    .intro {
+        &__title {
+            font-size: 1.75rem;
+
+            &-line {
+
+                &::after {
+                    bottom: 0.1875rem;
+                    height: 0.625rem;
+                    left: 3.4375rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $old-mobile-screen-width) {
+    .intro {
+        padding: 6rem $page-padding-sm 1.5rem;
+
+        &__picture {
+            width: 17.8125rem;
+        }
+    }
+}

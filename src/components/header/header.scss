@@ -1,0 +1,201 @@
+.header {
+    height: 6rem;
+    max-width: 71.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 $page-padding-xxl;
+
+    &__logo {
+        max-width: 12.125rem;
+    }
+
+    &__right {
+        display: flex;
+        gap: 4rem;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 2.875rem;
+
+        &-item {
+            text-decoration: none;
+            color: var(--secondary-color-text);
+            font-family: var(--primary-font-family);
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 150%;
+            transition: 0.5s;
+
+            &:hover {
+                color: var(--secondary-background-color);
+                transition: 0.5s;
+            }
+
+            &_mobile {
+                height: 3rem;
+                width: 10.6875rem;
+                margin-bottom: 0.75rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &__registration {
+        cursor: pointer;
+        padding: 0.75rem 1.5625rem;
+        border-radius: 0.3125rem;
+        border: none;
+        outline: none;
+        font-family: var(--primary-font-family);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 150%;
+        color: var(--mat-basic-color-text);
+        background: var(--primary-background-color);
+        text-transform: capitalize;
+        transition: 0.7s;
+
+        &:hover {
+            background: var(--secondary-background-color);
+            transition: 0.7s;
+        }
+
+        &_mobile {
+            width: 10.6875rem;
+            margin-top: 2rem;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 1.5rem;
+        height: 1.25rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1;
+
+        &-bar {
+            width: 1.5rem;
+            height: 0.1875rem;
+            background-color: var(--primary-background-color);
+            border-radius: 0.1875rem;
+            transition: all 0.3s linear;
+        }
+    }
+
+    &__mobile-menu {
+        padding-top: 6.25rem;
+        display: none;
+        position: absolute;
+        top: 6.75rem;
+        width: 100%;
+        background: var(--mat-basic-color-text);
+        justify-content: center;
+    }
+
+    &__mobile-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__hamburger--active &__hamburger-bar:nth-child(1) {
+        transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+    }
+
+    &__hamburger--active &__hamburger-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    &__hamburger--active &__hamburger-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(0.3125rem, -0.3125rem);
+    }
+
+    &__mobile-menu--active {
+        display: flex;
+    }
+
+
+}
+
+
+@media (max-width: $desktop-screen-width) {
+    .header {
+        padding: 0 $page-padding-xl;
+    }
+}
+
+@media (max-width: $medium-screen-width) {
+    .header {
+        padding: 0 $page-padding-lg;
+
+        &__right,
+        &__navigation {
+            gap: 1.875rem;
+        }
+
+        &__mobile-menu--active {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $mobile-screen-width) {
+    .header {
+        position: fixed;
+        width: -webkit-fill-available;
+        z-index: 2;
+        top: 0;
+        padding: 0 $page-padding-md;
+        background-color: white;
+
+        height: 5.25rem;
+
+        &__logo {
+            max-height: 2.25rem;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        &__registration {
+            display: none;
+
+            &_mobile {
+                display: block;
+            }
+        }
+
+        &__hamburger {
+            display: flex;
+        }
+
+        &__mobile-menu--active {
+            display: block;
+            padding: 6.25rem 0 10.9375rem;
+            margin-left: -1.5625rem;
+            margin: -1.5625rem;
+            width: -webkit-fill-available;
+        }
+    }
+
+}
+
+@media (max-width: $old-mobile-screen-width) {
+    .header {
+        padding: 0 $page-padding-sm;
+        background-image: url("../media/header/bacground/bg_mob2.svg");
+        background-size: cover;
+    }
+}

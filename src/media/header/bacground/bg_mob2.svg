@@ -1,0 +1,61 @@
+<svg width="375.000000" height="1004.000000" viewBox="0 0 375 1004" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_6553_dd" x="-465.000000" y="-506.000000" width="1068.000000" height="1068.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="138.667" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_6555_dd" x="-551.000000" y="-345.000000" width="1218.000000" height="1222.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="163.667" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_6557_dd" x="-255.000000" y="2.000000" width="1152.000000" height="1152.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="151" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_6559_dd" x="-257.000000" y="-330.000000" width="1052.000000" height="1052.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="140" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_6561_dd" x="-526.000000" y="82.000000" width="1052.000000" height="1052.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="140" result="effect_layerBlur_1"/>
+		</filter>
+		<clipPath id="clip1_6547">
+			<rect id="bg_mob 2" rx="-0.500000" width="374.000000" height="1003.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="bg_mob 2" rx="-0.500000" width="374.000000" height="1003.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_6547)">
+		<mask id="mask1_6549" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="375.000000" height="1004.000000">
+			<path id="Vector" d="M0 0L375 0L375 1004L0 1004L0 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</mask>
+		<g mask="url(#mask1_6549)">
+			<g opacity="0.300000">
+				<path id="Vector" d="M0 0L375 0L375 1004L0 1004L0 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+				<g filter="url(#filter_1_6553_dd)">
+					<path id="Vector" d="M187 28C187 93.16 134.17 146 69 146C3.83 146 -49 93.16 -49 28C-49 -37.17 3.83 -90 69 -90C134.17 -90 187 -37.17 187 28Z" fill="#7F3A6A" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</g>
+				<g filter="url(#filter_1_6555_dd)">
+					<path id="Vector" d="M176 266C176 332.27 123.17 386 58 386C-7.17 386 -60 332.27 -60 266C-60 199.72 -7.17 146 58 146C123.17 146 176 199.72 176 266Z" fill="#DF286A" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</g>
+				<g filter="url(#filter_1_6557_dd)">
+					<path id="Vector" d="M444 578C444 645.93 388.93 701 321 701C253.06 701 198 645.93 198 578C198 510.06 253.06 455 321 455C388.93 455 444 510.06 444 578Z" fill="#EB8B27" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</g>
+				<g filter="url(#filter_1_6559_dd)">
+					<path id="Vector" d="M375 196C375 254.54 327.54 302 269 302C210.45 302 163 254.54 163 196C163 137.45 210.45 90 269 90C327.54 90 375 137.45 375 196Z" fill="#EAAA24" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</g>
+				<g filter="url(#filter_1_6561_dd)">
+					<path id="Vector" d="M106 608C106 666.54 58.54 714 0 714C-58.55 714 -106 666.54 -106 608C-106 549.45 -58.55 502 0 502C58.54 502 106 549.45 106 608Z" fill="#EAAA24" fill-opacity="1.000000" fill-rule="evenodd"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

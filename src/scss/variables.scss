@@ -1,0 +1,20 @@
+:root {
+  --primary-font-family: Open Sans;
+  --secondary-font-family: Exo;
+
+  --primary-color-text: rgb(49, 49, 49);
+  --secondary-color-text: rgb(88, 88, 88);
+  --mat-basic-color-text: rgb(255, 255, 255);
+
+  --primary-background-color: rgb(127, 58, 106);
+  --secondary-background-color: rgb(233, 169, 35);
+  --mat-basic-bg-color: rgb(241, 233, 238);
+  --mat-bg-footer: rgb(249, 241, 238);
+  --mat-bg-social: #7f3a6a;
+}
+
+$page-padding-sm: 16px; // 479
+$page-padding-md: 25px; // 767
+$page-padding-lg: 32px; // 991
+$page-padding-xl: 45px; // 1279
+$page-padding-xxl: 70px; //1920
