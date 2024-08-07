@@ -153,9 +153,11 @@
         position: fixed;
         width: -webkit-fill-available;
         z-index: 2;
-        top: 0;
+        top: -1px;
         padding: 0 $page-padding-md;
         background-color: white;
+        background-image: url("../media/header/bacground/bg_mob2.svg");
+        background-size: cover;
         height: 5.25rem;
 
         &__logo {
