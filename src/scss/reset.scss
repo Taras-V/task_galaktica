@@ -147,6 +147,7 @@ table {
 
 	@media (max-width: $mobile-screen-width) {
 		&::before {
+			content: '';
 			height: 110%;
 			background-image: url("../media/header/bacground/bg_mob2.svg");
 		}
